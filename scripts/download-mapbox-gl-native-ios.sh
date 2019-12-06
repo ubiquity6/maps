@@ -25,6 +25,7 @@ if [ -d ./Mapbox.framework ]; then
 fi
 
 curl -sS https://mapbox.s3.amazonaws.com/mapbox-gl-native/ios/builds/mapbox-ios-sdk-$VERSION-dynamic.zip > temp.zip
+curl -sS https://ubiquity6-build.s3.amazonaws.com/mapbox-ios-sdk-5.3.2-u6dev_rn61-dynamic.zip > temp.zip
 unzip -o temp.zip -d temp
 mv temp/dynamic/Mapbox.framework ./Mapbox.framework
 rm -r temp
